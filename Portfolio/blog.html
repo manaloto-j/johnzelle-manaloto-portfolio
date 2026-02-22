@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Johnzelle Manaloto | Thoughts on Design & Development</title>
+  <meta name="description" content="Personal blog by Johnzelle Manaloto — honest thoughts on web development, UI/UX design, and the creative journey of building digital experiences from the Philippines." />
+  <meta name="keywords" content="Johnzelle Manaloto blog, UI/UX designer blog, front-end developer struggles, graphic designer thoughts, Philippines developer" />
+  <meta name="author" content="Johnzelle Manaloto" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://johnzellem.netlify.app/blog.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://johnzellem.netlify.app/blog.html" />
+  <meta property="og:title"       content="Blog — Johnzelle Manaloto | Thoughts on Design & Development" />
+  <meta property="og:description" content="Honest thoughts on web development, UI/UX design, and the creative journey of building digital experiences." />
+  <meta property="og:image"       content="https://johnzellem.netlify.app/images/og-image.png" />
+  <meta property="og:locale"      content="en_PH" />
+  <meta property="og:site_name"   content="Johnzelle Manaloto Portfolio" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:url"         content="https://johnzellem.netlify.app/blog.html" />
+  <meta name="twitter:title"       content="Blog — Johnzelle Manaloto | Thoughts on Design & Development" />
+  <meta name="twitter:description" content="Honest thoughts on web development, UI/UX design, and the creative journey of building digital experiences." />
+  <meta name="twitter:image"       content="https://johnzellem.netlify.app/images/og-image.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog — Johnzelle Manaloto",
+    "description": "Personal blog about UI/UX design and front-end development",
+    "url": "https://johnzellem.netlify.app/blog.html",
+    "author": {
+      "@type": "Person",
+      "name": "Johnzelle Manaloto",
+      "url": "https://johnzellem.netlify.app"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER NAV ========== -->
+  <header class="site-header">
+    <nav class="nav-pill">
+      <a href="index.html" class="nav-logo">
+        <img src="svg/j-logo.png" alt="J" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html"    class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="resume.html"   class="nav-link">Resume</a></li>
+        <li><a href="blog.html"     class="nav-link active">Blog</a></li>
+        <li><a href="contact.html"  class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="blog-hero">
+    <img src="svg/bg-dots.svg" alt="" aria-hidden="true" class="blog-hero-dots" />
+    <img src="svg/bg-dots.svg" alt="" aria-hidden="true" class="blog-hero-dots-left" />
+
+    <p class="section-preheader">Honest Thoughts &amp; Reflections</p>
+    <h1 class="blog-hero-title">
+      <span class="letter" style="animation-delay:0.30s">B</span><span class="letter" style="animation-delay:0.34s">L</span><span class="letter" style="animation-delay:0.38s">O</span><span class="letter" style="animation-delay:0.42s">G</span>
+    </h1>
+    <p class="blog-hero-sub">
+      A space where I document my creative journey — the real struggles, the lessons,
+      and everything in between.
+    </p>
+
+    <div class="blog-count-bar">
+      <span>Total Posts</span>
+      <div class="count-divider"></div>
+      <strong>03</strong>
+      <div class="count-divider"></div>
+      <span>Personal Essays</span>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE DIVIDER ========== -->
+  <div class="marquee-divider">
+    <div class="marquee-track">
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ========== BLOG POSTS ========== -->
+  <main class="blog-main">
+
+    <!-- ===== POST 01 ===== -->
+    <article class="blog-card reveal" data-num="01" id="post-01">
+      <div class="blog-card-progress"></div>
+      <div class="blog-card-inner">
+        <div class="blog-card-top">
+          <div class="blog-tag-row">
+            <span class="blog-tag">Web Development</span>
+            <span class="blog-date">February 2026</span>
+          </div>
+          <span class="blog-read-time">6 min read</span>
+        </div>
+
+        <h2 class="blog-card-title">The <span>Unglamorous</span> Side of Being a Web Developer</h2>
+        <p class="blog-card-excerpt">
+          Nobody tells you about the hours staring at a blank console, the Stack Overflow rabbit holes,
+          or the feeling of breaking something that was perfectly fine five minutes ago. This is that story.
+        </p>
+
+        <button class="blog-read-btn" onclick="togglePost('post-01', this)" aria-expanded="false">
+          Read Post <span class="btn-arrow">→</span>
+        </button>
+      </div>
+
+      <div class="blog-content" id="post-01-content">
+        <div class="blog-content-inner">
+          <h3>THE CURSOR BLINKS. YOU STARE BACK.</h3>
+          <p>
+            There is a particular kind of silence that fills a room when your code refuses to work and you have no
+            idea why. It is not peaceful. It is heavy — the kind that makes you question every decision that led you
+            to sit in front of a screen, writing instructions to a machine that seems to take personal offense at
+            your logic.
+          </p>
+          <p>
+            When I started learning web development, I imagined it would feel like building things. Like construction —
+            methodical, visual, satisfying. <strong>Nobody warned me it would mostly feel like debugging things.</strong>
+            Like archaeology, except the ancient artifact is a function you wrote last Tuesday and can no longer understand.
+          </p>
+
+          <h3>THE BROWSER IS NOT YOUR FRIEND</h3>
+          <p>
+            One of the earliest lessons I learned was that browsers are wildly inconsistent. Something looks perfect in Chrome.
+            You open Safari and suddenly everything is misaligned. Firefox renders your carefully crafted flexbox like it's
+            still 2009. You spend three hours chasing a CSS bug that turns out to be a single missing semicolon three hundred lines up.
+          </p>
+          <p>
+            Cross-browser compatibility is one of those things that sounds like a minor inconvenience until it devours your afternoon.
+            Then your evening. Then the next morning, when you sit back down and realize you still haven't fixed it.
+          </p>
+
+          <div class="blog-highlight">
+            <p>"I once spent an entire day tracking a layout bug. The fix was one line. The line was <code>box-sizing: border-box</code>.
+            I will never forget this as long as I live."</p>
+          </div>
+
+          <h3>IMPOSTER SYNDROME IS VERY REAL</h3>
+          <p>
+            The web development community is enormous, and it can feel suffocating. Developers on YouTube build full-stack
+            apps in an hour. Twitter threads casually mention fifteen tools you have never heard of. You start to wonder
+            whether you are actually learning or just collecting half-finished tutorials.
+          </p>
+          <p>
+            <strong>I felt this constantly.</strong> Especially in the beginning. Everyone seemed to already know everything,
+            and I was still Googling how to center a div. (For the record — that is a completely legitimate thing to Google.
+            Centering divs is genuinely confusing and has been for decades.)
+          </p>
+
+          <h3>WHEN NOTHING WORKS AND GOOGLE DOESN'T HELP</h3>
+          <p>
+            There is a specific kind of frustration reserved for the moment you search your exact error message and find
+            a Stack Overflow thread from 2014 where someone marks a completely unrelated answer as accepted. Or when the
+            documentation is technically correct but written in a way that assumes you already understand what you're
+            trying to learn.
+          </p>
+          <p>
+            Web development humbles you constantly. Some days you feel like you are making real progress. Other days you
+            spend four hours learning that a feature you wanted to build is simply not supported in the browser version
+            your users are on.
+          </p>
+
+          <h3>BUT HERE'S WHAT KEEPS ME GOING</h3>
+          <p>
+            Despite all of it — the bugs, the late nights, the moments of genuine despair — there is something uniquely
+            satisfying about web development. When something finally works, when the layout snaps into place and the
+            animation runs smoothly and the form submits without errors, it genuinely feels like you built something.
+            Because you did.
+          </p>
+          <p>
+            Every developer, no matter how experienced, still searches for things. Still breaks things. The difference
+            is just how fast you get yourself unstuck. And that only comes with time.
+          </p>
+
+          <div class="sticky-collapse-wrap">
+            <button class="sticky-collapse" onclick="togglePost('post-01', document.querySelector('#post-01 .blog-read-btn'))" aria-label="Collapse post">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+              Collapse Post
+            </button>
+          </div>
+
+          <p class="blog-closing">Posted by Johnzelle Manaloto &nbsp;·&nbsp; February 2026</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===== POST 02 ===== -->
+    <article class="blog-card reveal" data-num="02" id="post-02">
+      <div class="blog-card-progress"></div>
+      <div class="blog-card-inner">
+        <div class="blog-card-top">
+          <div class="blog-tag-row">
+            <span class="blog-tag">UI/UX &amp; Graphic Design</span>
+            <span class="blog-date">February 2026</span>
+          </div>
+          <span class="blog-read-time">7 min read</span>
+        </div>
+
+        <h2 class="blog-card-title">Designing Is <span>Harder</span> Than It Looks</h2>
+        <p class="blog-card-excerpt">
+          Everyone assumes designers just pick pretty colors and move things around. They don't see the
+          hours of research, the endless revisions, or the quiet grief of killing a design you loved because
+          it just doesn't work for the user.
+        </p>
+
+        <button class="blog-read-btn" onclick="togglePost('post-02', this)" aria-expanded="false">
+          Read Post <span class="btn-arrow">→</span>
+        </button>
+      </div>
+
+      <div class="blog-content" id="post-02-content">
+        <div class="blog-content-inner">
+          <h3>"JUST MAKE IT LOOK NICE"</h3>
+          <p>
+            If I had a peso for every time someone described design as "just making things look nice," I could
+            probably afford a proper Figma license without thinking about it. The perception that design is a
+            light, decorative layer laid on top of real work is one of the most persistent — and frustrating —
+            misconceptions I have encountered.
+          </p>
+          <p>
+            <strong>Design is problem solving.</strong> It is research, iteration, testing, and compromise.
+            It is spending two hours on a button — its size, weight, color, position, label, and hover state —
+            because that button is the single most important interaction point on the entire screen.
+          </p>
+
+          <h3>THE BLANK CANVAS IS NOT INSPIRING</h3>
+          <p>
+            There is a myth that creatives sit down and inspiration flows. The blank Figma canvas has never once
+            looked inspiring to me. It looks like a void of infinite possibility and infinite ways to get it wrong.
+            The hard part of design is starting — deciding what this thing even is before you can decide what it
+            should look like.
+          </p>
+          <p>
+            Graphic design adds another layer. Typography alone is a discipline that takes years to really understand.
+            Kerning, leading, hierarchy, pairing — the difference between text that feels premium and text that looks
+            like a 2008 WordPress blog often comes down to spacing decisions most people will never consciously notice.
+          </p>
+
+          <div class="blog-highlight">
+            <p>"Good design is invisible. Nobody notices when the layout is perfect. They only notice when it isn't.
+            You spend hours making something and the best outcome is that nobody comments on it."</p>
+          </div>
+
+          <h3>CLIENT FEEDBACK AND THE ART OF NOT BREAKING</h3>
+          <p>
+            "Can you make the logo bigger?" "Can we try it in Comic Sans?" "I like it but can it be more pop?"
+            If you have worked in any design capacity, you know exactly the kind of feedback I am describing.
+            Feedback that arrives without context, without clear direction, and occasionally from someone who
+            has never seen the brief.
+          </p>
+          <p>
+            Learning to receive feedback without treating it as a personal attack on your taste is a genuine skill.
+            <strong>Detaching from your work enough to revise it clearly, without losing the vision</strong> — that
+            is something nobody teaches you in any tutorial.
+          </p>
+
+          <h3>UX IS AN ARGUMENT YOU HAVE WITH YOURSELF</h3>
+          <p>
+            UI/UX design means holding two competing instincts at the same time: what looks visually compelling,
+            and what actually helps the user accomplish their goal. These are frequently in conflict. The dramatic
+            full-screen hero animation you love slows down the page. The minimal, clean layout you planned has
+            nowhere to put the information stakeholders insisted on including.
+          </p>
+          <p>
+            User research should inform design decisions — but research takes time, and time is rarely something
+            you have in abundance. So you make educated guesses, build empathy through intuition, and test wherever
+            you can. And you accept that you will be wrong sometimes, and that the design will need to change.
+          </p>
+
+          <h3>THE REVISION THAT NEVER ENDS</h3>
+          <p>
+            Design is never finished. It is only abandoned when the deadline arrives. Every time you look at a
+            completed project, you see the things you would have done differently. The hierarchy you would
+            tighten. The color that doesn't quite sit right. The component you would rebuild from scratch
+            given another day.
+          </p>
+          <p>
+            That relentless eye for imperfection is part of what makes someone a good designer. But it is also
+            exhausting to carry. Learning when good enough is actually good enough — and when it isn't —
+            is something I am still actively working on.
+          </p>
+
+          <div class="sticky-collapse-wrap">
+            <button class="sticky-collapse" onclick="togglePost('post-02', document.querySelector('#post-02 .blog-read-btn'))" aria-label="Collapse post">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+              Collapse Post
+            </button>
+          </div>
+
+          <p class="blog-closing">Posted by Johnzelle Manaloto &nbsp;·&nbsp; February 2026</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ===== POST 03 ===== -->
+    <article class="blog-card reveal" data-num="03" id="post-03">
+      <div class="blog-card-progress"></div>
+      <div class="blog-card-inner">
+        <div class="blog-card-top">
+          <div class="blog-tag-row">
+            <span class="blog-tag">Personal Reflection</span>
+            <span class="blog-date">February 2026</span>
+          </div>
+          <span class="blog-read-time">5 min read</span>
+        </div>
+
+        <h2 class="blog-card-title">I Code — But <span>Design</span> Is Where I Live</h2>
+        <p class="blog-card-excerpt">
+          My portfolio says "front-end developer." My instincts say something different. Here's my honest
+          reflection on where I truly thrive — and why I've stopped pretending those are the same thing.
+        </p>
+
+        <button class="blog-read-btn" onclick="togglePost('post-03', this)" aria-expanded="false">
+          Read Post <span class="btn-arrow">→</span>
+        </button>
+      </div>
+
+      <div class="blog-content" id="post-03-content">
+        <div class="blog-content-inner">
+          <h3>THE HONEST ADMISSION</h3>
+          <p>
+            I can build websites. I know my way around HTML, CSS, and JavaScript. I can wire up a form, architect
+            a component, debug a layout, and deploy to Netlify without breaking a sweat. By most definitions,
+            I am a front-end developer.
+          </p>
+          <p>
+            But if you sat me down and asked where I felt most in my element — most confident, most alive,
+            most like I was doing exactly what I was meant to do — the honest answer would not be a code editor.
+            <strong>It would be Figma.</strong>
+          </p>
+
+          <h3>WHERE THE ENERGY IS DIFFERENT</h3>
+          <p>
+            When I write code, I feel capable. I feel competent. I can solve the problem in front of me,
+            and that is genuinely satisfying. But when I open a design file, something shifts. I am not
+            just solving a problem — I am making a series of deliberate choices about how something should
+            feel. How the eye should move. What should demand attention and what should quietly recede.
+          </p>
+          <p>
+            That kind of thinking comes naturally to me in a way that debugging a JavaScript error simply
+            doesn't. Design is where I stop working and start creating. The distinction feels important.
+          </p>
+
+          <div class="blog-highlight">
+            <p>"I used to think I needed to pick one. Developer or designer. I've stopped thinking that way.
+            But I've also stopped pretending they feel equal to me."</p>
+          </div>
+
+          <h3>WHAT GRAPHIC DESIGN GAVE ME</h3>
+          <p>
+            Before I ever wrote a line of HTML, I was making things in Photoshop. Posters, edits, layouts —
+            anything visual I could get my hands on. Graphic design taught me to see: to notice color relationships,
+            to feel when a composition is balanced versus when it only appears to be, to understand why certain
+            fonts carry authority and others feel playful.
+          </p>
+          <p>
+            That visual language became the foundation everything else was built on. When I design a UI,
+            I am not working from a checklist of UX principles. I am trusting a deep, accumulated sense of
+            what looks intentional and what looks accidental. <strong>That intuition was built through design,
+            not development.</strong>
+          </p>
+
+          <h3>THE CODER WHO DESIGNS, OR THE DESIGNER WHO CODES?</h3>
+          <p>
+            There is real value in being able to do both. I would not trade my ability to implement my own designs —
+            to see exactly how something will behave in a real browser rather than guessing from a static mockup.
+            Knowing how things get built makes me a more grounded designer. I know what is feasible. I know
+            what will require compromise.
+          </p>
+          <p>
+            But my identity is clearer to me now than it was when I started. I am a designer who codes —
+            not the other way around. My strongest ideas come from the visual side of my brain. My most
+            confident hours are spent in a design tool, not a terminal.
+          </p>
+
+          <h3>WHY THIS MATTERS</h3>
+          <p>
+            I am writing this because I spent a long time trying to frame myself primarily as a developer
+            because it sounded more technical, more serious, more like a career. And it is — development
+            is a legitimate and challenging discipline. But leaning into it at the expense of my real
+            strengths was doing me no favors.
+          </p>
+          <p>
+            The work I am most proud of, the projects that genuinely excite me, the moments where feedback
+            makes me feel seen — they almost always come from the design side of what I do. Recognizing
+            that is not a limitation. It is clarity. And clarity, as any good designer will tell you,
+            is where good work actually begins.
+          </p>
+
+          <div class="sticky-collapse-wrap">
+            <button class="sticky-collapse" onclick="togglePost('post-03', document.querySelector('#post-03 .blog-read-btn'))" aria-label="Collapse post">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+              Collapse Post
+            </button>
+          </div>
+
+          <p class="blog-closing">Posted by Johnzelle Manaloto &nbsp;·&nbsp; February 2026</p>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ========== MARQUEE DIVIDER ========== -->
+  <div class="marquee-divider marquee-reverse">
+    <div class="marquee-track reverse">
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+      <span>MANALOTO • JOHNZELLE &nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-top">
+      <a href="index.html" class="footer-logo">
+        <img src="svg/j-logo.png" alt="J" />
+      </a>
+      <a href="#" class="back-to-top" id="backToTop">
+        <span class="btt-track">
+          <span class="btt-arrow">↑</span>
+        </span>
+        Back to Top
+      </a>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-cta">
+        <h3>Have a project in mind?</h3>
+        <p>Let's collaborate and build something remarkable together that leaves an impression.</p>
+        <a href="contact.html" class="footer-talk-link">Let's Talk <span>→</span></a>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About Me</a></li>
+            <li><a href="resume.html">My Resume</a></li>
+            <li><a href="projects.html">My Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social Networks</h4>
+          <ul>
+            <li><a href="/cdn-cgi/l/email-protection#b5dfc4d8d4dbd4d9dac1da87858580f5d2d8d4dcd99bd6dad8">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/johnzelle-manaloto-193088376/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Jz100505" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wordmark">
+      <span>JOHNZELE M.</span>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Johnzelle Manaloto. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/shared.js" defer></script>
+  <script src="scripts/page-init.js" defer></script>
+  <script src="scripts/blog.js" defer></script>
+</body>
+</html>

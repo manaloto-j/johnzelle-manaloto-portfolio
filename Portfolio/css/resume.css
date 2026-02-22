@@ -1,0 +1,671 @@
+/* =============================================
+   RESUME PAGE — STYLES
+   Part of: Johnzelle Manaloto Portfolio
+   ============================================= */
+
+/* ── Hero ── */
+.resume-hero {
+  position: relative;
+  padding: 10rem 2rem 5rem;
+  text-align: center;
+  overflow: hidden;
+  background: var(--black);
+}
+
+/* Grouped: shared base for both dot images */
+.resume-hero-dots,
+.resume-hero-dots-left {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+.resume-hero-dots {
+  right: 0;
+  width: 40%;
+  opacity: 0.12;
+}
+.resume-hero-dots-left {
+  left: 0;
+  width: 30%;
+  opacity: 0.08;
+  transform: scaleX(-1);
+}
+
+.resume-hero .section-preheader {
+  margin-bottom: 0.75rem;
+}
+
+.resume-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 10vw, 9rem);
+  letter-spacing: 0.03em;
+  line-height: 0.9;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.85);
+  position: relative;
+  z-index: 2;
+}
+
+.resume-hero-title span {
+  color: var(--orange);
+  -webkit-text-stroke: 0;
+}
+
+.resume-hero-sub {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  max-width: 480px;
+  margin: 1.5rem auto 0;
+  line-height: 1.75;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Download Bar ── */
+.resume-download-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: var(--orange);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.75rem 1.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.btn-download:hover {
+  background: var(--orange-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 90, 0, 0.3);
+}
+
+.btn-download svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.download-hint {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* ── Main Layout ── */
+.resume-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.resume-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* ── Section Label ── */
+.resume-section-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.resume-section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ── Section Heading ── */
+.resume-section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  letter-spacing: 0.04em;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 1.75rem;
+}
+
+/* ── Grouped: shared card surface across all card types ── */
+.resume-about-card,
+.skills-panel,
+.timeline-card,
+.edu-card,
+.cert-mini-item {
+  background: var(--gray-mid);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── About Card ── */
+.resume-about-card {
+  border-radius: 14px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--orange);
+  border-radius: 3px 0 0 3px;
+}
+
+.resume-about-name {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+}
+
+.resume-about-role {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 1.25rem;
+}
+
+.resume-about-bio {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: rgba(245, 245, 240, 0.7);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.resume-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.resume-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.84rem;
+  font-weight: 300;
+  color: rgba(245, 245, 240, 0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.resume-contact-item:hover {
+  color: var(--orange);
+}
+
+.resume-contact-icon {
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 90, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+}
+
+/* ── Skills Panel ── */
+.skills-panel {
+  border-radius: 14px;
+  padding: 2rem;
+}
+
+.skill-category {
+  margin-bottom: 1.5rem;
+}
+
+.skill-category:last-child {
+  margin-bottom: 0;
+}
+
+.skill-category-name {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 0.3rem 0.65rem;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.skill-tag:hover {
+  background: rgba(255, 90, 0, 0.1);
+  border-color: rgba(255, 90, 0, 0.3);
+  color: var(--orange);
+}
+
+/* ── Languages ── */
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.language-name {
+  font-size: 0.87rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.language-level {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.language-bar-track {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 99px;
+  margin-top: 0.3rem;
+  overflow: hidden;
+}
+
+.language-bar-fill {
+  height: 100%;
+  background: var(--orange);
+  border-radius: 99px;
+  width: 0%;
+  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.language-bar-fill.animated {
+  width: var(--fill);
+}
+
+/* ── Timeline ── */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, var(--orange) 0%, rgba(255, 90, 0, 0.15) 100%);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.65rem;
+  top: 0.62rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--orange);
+  border: 2px solid var(--black);
+  box-shadow: 0 0 0 3px rgba(255, 90, 0, 0.2);
+  transition: box-shadow 0.3s;
+}
+
+.timeline-item:hover::before {
+  box-shadow: 0 0 0 5px rgba(255, 90, 0, 0.2);
+}
+
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  color: var(--orange);
+  margin-bottom: 0.3rem;
+  line-height: 1;
+}
+
+.timeline-card {
+  border-radius: 10px;
+  padding: 1.25rem 1.4rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 90, 0, 0.05) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.timeline-card:hover::before {
+  transform: translateX(100%);
+}
+
+.timeline-card:hover {
+  border-color: rgba(255, 90, 0, 0.35);
+  transform: translateX(4px);
+}
+
+.timeline-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.15rem;
+}
+
+.timeline-company {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-location {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.timeline-desc {
+  font-size: 0.84rem;
+  font-weight: 300;
+  color: rgba(245, 245, 240, 0.65);
+  line-height: 1.65;
+}
+
+/* ── Education Card ── */
+.edu-card {
+  border-radius: 10px;
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.edu-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--orange);
+  opacity: 0;
+  border-radius: 0 3px 3px 0;
+  transition: opacity 0.25s;
+}
+
+.edu-card:hover {
+  border-color: rgba(255, 90, 0, 0.35);
+  transform: translateX(-4px);
+}
+
+.edu-card:hover::after {
+  opacity: 1;
+}
+
+.edu-card:last-child {
+  margin-bottom: 0;
+}
+
+.edu-degree {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.35;
+  margin-bottom: 0.2rem;
+}
+
+.edu-degree em {
+  color: var(--orange);
+  font-style: normal;
+}
+
+.edu-level {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.edu-meta {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.edu-school {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: rgba(245, 245, 240, 0.65);
+}
+
+.edu-date {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--orange);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Certifications ── */
+.cert-mini-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.cert-mini-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 8px;
+  padding: 0.9rem 1.2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.25s, transform 0.2s;
+}
+
+.cert-mini-item:hover {
+  border-color: rgba(255, 90, 0, 0.35);
+  transform: translateX(4px);
+}
+
+.cert-mini-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--orange);
+  flex-shrink: 0;
+}
+
+.cert-mini-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.cert-mini-name {
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.1rem;
+}
+
+.cert-mini-issuer {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.cert-mini-arrow {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.cert-mini-item:hover .cert-mini-arrow {
+  color: var(--orange);
+  transform: translateX(3px);
+}
+
+/* ── Light Mode ── */
+body.light-mode .resume-hero-title {
+  -webkit-text-stroke: 2px rgba(17, 17, 16, 0.75);
+}
+
+body.light-mode .resume-section-label::after {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .language-bar-track {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .timeline::before {
+  background: linear-gradient(180deg, var(--orange) 0%, rgba(255, 90, 0, 0.1) 100%);
+}
+
+/* Grouped: card surfaces in light mode */
+body.light-mode .resume-about-card,
+body.light-mode .skills-panel,
+body.light-mode .timeline-card,
+body.light-mode .edu-card,
+body.light-mode .cert-mini-item {
+  background: #e2ddd8;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .skill-tag {
+  color: #111110;
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .skill-tag:hover {
+  background: rgba(255, 90, 0, 0.1);
+  border-color: rgba(255, 90, 0, 0.3);
+  color: var(--orange);
+}
+
+body.light-mode .resume-about-bio,
+body.light-mode .timeline-desc,
+body.light-mode .edu-school {
+  color: rgba(17, 17, 16, 0.65);
+}
+
+body.light-mode .resume-contact-item {
+  color: rgba(17, 17, 16, 0.65);
+}
+
+body.light-mode .timeline-location {
+  color: rgba(17, 17, 16, 0.5);
+}
+
+body.light-mode .cert-mini-name {
+  color: #111110;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .resume-main {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .resume-hero { padding: 9rem 1.5rem 3.5rem; }
+  .resume-main { padding: 3rem 1.5rem 5rem; }
+  .edu-meta    { flex-direction: column; gap: 0.25rem; }
+}
