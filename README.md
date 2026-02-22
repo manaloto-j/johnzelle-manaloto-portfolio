@@ -1,7 +1,10 @@
 # Personal Portfolio — Johnzelle Manaloto
+**Live Website:** [johnzellem.netlify.app](https://johnzellem.netlify.app)
 
 ## Overview
-This project is a personal portfolio website for **Johnzelle Manaloto**, a UI/UX Designer and Front-End Developer based in the Philippines. The site showcases creative works, technical skills, and professional certifications through an interactive digital experience built primarily with modern front-end technologies.
+This project is a personal portfolio website for **Johnzelle Manaloto**, a UI/UX Designer and Front-End Developer based in the Philippines. You can view the live website at [johnzellem.netlify.app](https://johnzellem.netlify.app). 
+
+The site showcases creative works, technical skills, and professional certifications through an interactive digital experience built primarily with modern front-end technologies.
 
 ## Project Structure
 The repository is organized into the following directory structure:
@@ -16,7 +19,7 @@ The repository is organized into the following directory structure:
 * **`scripts/`**: Includes JavaScript files for site functionality:
     * `main.js`: Handles core UI interactions like custom cursors, 3D tilt effects, and scroll reveals.
     * `shared.js` & `page-init.js`: Manage common site-wide scripts and initialization.
-    * **Page-specific scripts**: (e.g., `projects.js`, `resume.js`, `contact.js`).
+    * **Page-specific scripts**: Logic for `projects.js`, `resume.js`, `blog.js`, and `contact.js`.
 * **`netlify/`**: Contains serverless functions, specifically for handling contact form submissions via `functions/contact.js`.
 * **`images/` & `svg/`**: Assets including project screenshots, certification badges, and vector icons for tools like Figma, React, and JavaScript.
 
