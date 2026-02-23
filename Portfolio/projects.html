@@ -60,6 +60,7 @@
         <li><a href="index.html"    class="nav-link">Home</a></li>
         <li><a href="#"             class="nav-link active">Projects</a></li>
         <li><a href="resume.html"   class="nav-link">Resume</a></li>
+        <li><a href="blog.html"     class="nav-link">Blog</a></li>
         <li><a href="contact.html"  class="nav-link">Contact</a></li>
       </ul>
     </nav>
@@ -84,7 +85,7 @@
     <div class="project-count-bar">
       <span>Total Projects</span>
       <div class="count-divider"></div>
-      <strong>02</strong>
+      <strong>03</strong>
       <div class="count-divider"></div>
       <span>Featured Works</span>
     </div>
@@ -105,10 +106,112 @@
   <!-- PROJECTS -->
   <main class="projects-main">
 
-    <!-- PROJECT 1: VELOUR -->
-    <article class="project-card" id="velour" data-num="01">
+    <!-- PROJECT 1: NUTRITRACK -->
+    <article class="project-card" id="nutritrack" data-num="01">
 
       <div class="project-gallery reveal-left">
+        <div class="gallery-main">
+          <img src="images/nutritrack-index.png" alt="NutriTrack homepage screenshot" id="nutritrack-main-img" />
+          <button class="gallery-expand-btn" onclick="openLightbox('images/nutritrack-index.png','NutriTrack — Homepage')">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1h5v1.5H2.5V5H1V1zm9 0h5v4h-1.5V2.5H10V1zM1 11h1.5v2.5H5V15H1v-4zm13.5 2.5H12V15h4v-4h-1.5v2.5z" fill="currentColor"/>
+            </svg>
+            Expand
+          </button>
+        </div>
+
+        <div class="gallery-thumbs">
+          <div class="gallery-thumb active" onclick="switchMain('nutritrack-main-img','images/nutritrack-index.png','NutriTrack — Homepage',this)">
+            <img src="images/nutritrack-index.png" alt="NutriTrack homepage" />
+            <div class="thumb-expand-btn" onclick="event.stopPropagation(); openLightbox('images/nutritrack-index.png','NutriTrack — Homepage')">
+              <span class="thumb-expand-icon">⤢ View</span>
+            </div>
+          </div>
+          <div class="gallery-thumb" onclick="switchMain('nutritrack-main-img','images/nutritrack-recipe.png','NutriTrack — Recipes Page',this)">
+            <img src="images/nutritrack-recipe.png" alt="NutriTrack recipes page" />
+            <div class="thumb-expand-btn" onclick="event.stopPropagation(); openLightbox('images/nutritrack-recipe.png','NutriTrack — Recipes Page')">
+              <span class="thumb-expand-icon">⤢ View</span>
+            </div>
+          </div>
+          <div class="gallery-thumb" onclick="switchMain('nutritrack-main-img','images/nutritrack-recipe-details.png','NutriTrack — Recipe Detail',this)">
+            <img src="images/nutritrack-recipe-details.png" alt="NutriTrack recipe detail page" />
+            <div class="thumb-expand-btn" onclick="event.stopPropagation(); openLightbox('images/nutritrack-recipe-details.png','NutriTrack — Recipe Detail')">
+              <span class="thumb-expand-icon">⤢ View</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-info reveal-right">
+        <p class="project-tag">Project 01 &nbsp;/&nbsp; Nutrition Platform</p>
+        <h2 class="project-name">NutriTrack</h2>
+        <p class="project-tagline">Nutrition &amp; Recipe Platform</p>
+        <p class="project-description">
+          NutriTrack is a dark-themed, multi-page nutrition platform and recreation of a past school project — rebuilt with a sharper design system
+          and interactive components. It helps users reach their health goals through high-protein recipes like Chicken Parmesan and Salmon Pasta,
+          with each dish featuring full ingredients, step-by-step instructions, and macro breakdowns to help users unlock their potential.
+        </p>
+
+        <div class="project-accordions">
+          <div class="accordion" id="nutritrack-features">
+            <button class="accordion-trigger" onclick="toggleAccordion('nutritrack-features')" aria-expanded="false">
+              <span class="accordion-trigger-left">
+                <span class="accordion-dot"></span>
+                <span class="accordion-label">Core Features</span>
+              </span>
+              <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <div class="feature-item"><div class="feature-dot"></div><span><strong>Dynamic Recipe Switcher</strong> — Sticky thumbnail bar that swaps all recipe content without a page reload, driven by URL params.</span></div>
+                <div class="feature-item"><div class="feature-dot"></div><span><strong>Interactive Stepper &amp; Timers</strong> — Click any step to activate it with a green glow, with built-in countdown timers on cooking steps.</span></div>
+                <div class="feature-item"><div class="feature-dot"></div><span><strong>Adjustable Servings</strong> — Counter that recalculates all nutrition values proportionally in real time.</span></div>
+                <div class="feature-item"><div class="feature-dot"></div><span><strong>Filter Tabs &amp; Macro Tracking</strong> — Filter recipes by category and view animated macro progress bars for each meal.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="nutritrack-challenges">
+            <button class="accordion-trigger" onclick="toggleAccordion('nutritrack-challenges')" aria-expanded="false">
+              <span class="accordion-trigger-left">
+                <span class="accordion-dot"></span>
+                <span class="accordion-label">Challenges</span>
+              </span>
+              <svg class="accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">
+                <div class="challenge-item"><div class="challenge-dot"></div><span><strong>Rebuilding from scratch</strong> — Required a complete redesign of architecture, styles, and JavaScript logic over the original school project.</span></div>
+                <div class="challenge-item"><div class="challenge-dot"></div><span><strong>Dynamic content rendering</strong> — Building a single detail page that dynamically renders all six recipes from a JS data object — including timers, steppers, and nutrition — required careful state management in vanilla JS.</span></div>
+                <div class="challenge-item"><div class="challenge-dot"></div><span><strong>Consistent dark design system</strong> — Maintaining a cohesive aesthetic across four unique page layouts while keeping CSS variables and components perfectly aligned.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-stack">
+          <span class="tech-pill">HTML5</span>
+          <span class="tech-pill">CSS3</span>
+          <span class="tech-pill">JavaScript</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://raw.githack.com/manaloto-j/NutriTrack/refs/heads/main/nutritrack/index.html" class="btn-orange" target="_blank" rel="noopener">Live Demo →</a>
+          <a href="https://github.com/jqm2005/NutriTrack" class="btn-github" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+    </article>
+
+    <div class="project-separator reveal"></div>
+
+    <!-- PROJECT 2: VELOUR -->
+    <article class="project-card" id="velour" data-num="02">
+
+      <div class="project-gallery reveal-right">
         <div class="gallery-main">
           <img src="images/velour-index.png" alt="Velour homepage screenshot" id="velour-main-img" />
           <button class="gallery-expand-btn" onclick="openLightbox('images/velour-index.png','Velour — Homepage')">
@@ -135,8 +238,8 @@
         </div>
       </div>
 
-      <div class="project-info reveal-right">
-        <p class="project-tag">Project 01 &nbsp;/&nbsp; E-Commerce</p>
+      <div class="project-info reveal-left">
+        <p class="project-tag">Project 02 &nbsp;/&nbsp; E-Commerce</p>
         <h2 class="project-name">Velour</h2>
         <p class="project-tagline">Luxury Perfume E-Commerce Website</p>
         <p class="project-description">
@@ -202,10 +305,10 @@
 
     <div class="project-separator reveal"></div>
 
-    <!-- PROJECT 2: SCENTSATIONAL -->
-    <article class="project-card" id="scentsational" data-num="02">
+    <!-- PROJECT 3: SCENTSATIONAL -->
+    <article class="project-card" id="scentsational" data-num="03">
 
-      <div class="project-gallery reveal-right">
+      <div class="project-gallery reveal-left">
         <div class="gallery-main">
           <img src="images/scentsational-home.png" alt="ScentSational homepage screenshot" id="scentsational-main-img" />
           <button class="gallery-expand-btn" onclick="openLightbox('images/scentsational-home.png','ScentSational — Homepage')">
@@ -232,8 +335,8 @@
         </div>
       </div>
 
-      <div class="project-info reveal-left">
-        <p class="project-tag">Project 02 &nbsp;/&nbsp; E-Commerce</p>
+      <div class="project-info reveal-right">
+        <p class="project-tag">Project 03 &nbsp;/&nbsp; E-Commerce</p>
         <h2 class="project-name">ScentSational</h2>
         <p class="project-tagline">Boutique Perfume E-Commerce Platform</p>
         <p class="project-description">
@@ -345,7 +448,7 @@
         <div class="footer-col">
           <h4>Social Networks</h4>
           <ul>
-            <li><a href="mailto:jqmanaloto2005@gmail.com">Email</a></li>
+            <li><a href="/cdn-cgi/l/email-protection#5238233f333c333e3d263d6062626712353f333b3e7c313d3f">Email</a></li>
             <li><a href="https://www.linkedin.com/in/johnzelle-manaloto-193088376/" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/Jz100505" target="_blank">GitHub</a></li>
           </ul>
@@ -366,8 +469,8 @@
     </div>
   </div>
 
-  <script src="scripts/shared.js"></script>
-  <script src="scripts/page-init.js"></script>
-  <script src="scripts/projects.js"></script>
+  <script src="scripts/shared.js" defer></script>
+  <script src="scripts/page-init.js" defer></script>
+  <script src="scripts/projects.js" defer></script>
 </body>
 </html>
