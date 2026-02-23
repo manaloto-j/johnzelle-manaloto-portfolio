@@ -281,6 +281,7 @@
   font-weight: 300;
   color: rgba(245,245,240,0.72);
   line-height: 1.8;
+  text-align: justify;
 }
 
 /* ── Features list ── */
@@ -303,6 +304,7 @@
   font-weight: 300;
   color: rgba(245,245,240,0.8);
   line-height: 1.55;
+  text-align: justify;
 }
 
 .feature-dot {
@@ -468,6 +470,7 @@
   font-weight: 300;
   color: rgba(245,245,240,0.75);
   line-height: 1.65;
+  text-align: justify;
 }
 
 .challenge-dot {
