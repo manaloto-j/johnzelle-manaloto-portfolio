@@ -8,6 +8,9 @@
 .featured-project { padding-top: 2.5rem !important; }
 .certifications   { padding-bottom: 2.5rem !important; }
 
+/* ── Featured Project ── */
+.fp-desc { text-align: justify; }
+
 /* ── About ── */
 .about {
   padding: 2.5rem 2rem 5rem;
@@ -80,6 +83,7 @@
   line-height: 1.75;
   margin-bottom: 1.2rem;
   color: var(--text-secondary, rgba(255,255,255,0.8));
+  text-align: justify;
 }
 
 .about-bio-sub {
@@ -87,6 +91,7 @@
   line-height: 1.7;
   color: var(--text-muted, rgba(255,255,255,0.45));
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 body.light-mode .about-stat-divider  { background: rgba(0,0,0,0.12); }
