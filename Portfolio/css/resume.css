@@ -210,6 +210,7 @@
   color: rgba(245, 245, 240, 0.7);
   line-height: 1.75;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 .resume-contact-list {
@@ -453,6 +454,7 @@
   font-weight: 300;
   color: rgba(245, 245, 240, 0.65);
   line-height: 1.65;
+  text-align: justify;
 }
 
 /* ── Education Card ── */
